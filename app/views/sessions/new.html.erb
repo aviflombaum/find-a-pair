@@ -1,0 +1,20 @@
+<h1>Login</h1>
+
+<% if flash[:notice] %>
+<h2><%= flash[:notice] %></h2>
+<% end %>
+
+<!-- <form action="/users" method="POST">
+
+  <input type="submit" value="Register" />
+
+</form> -->
+
+<%= form_tag("/sessions") do %>
+  <p>
+    <%= label_tag "Email:" %>
+    <%= text_field_tag "email" %>
+
+  </p>
+  <%= submit_tag "Login" %>
+<% end %>
