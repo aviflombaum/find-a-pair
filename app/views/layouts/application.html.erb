@@ -10,7 +10,6 @@
   </head>
 
   <body>
-    <%= make_me_available_to_the_view %>
     <% if session[:current_user_id] %>
     <nav>
       You are logged in as: <%= @current_user.email %> | <a href="/logout">Logout</a>

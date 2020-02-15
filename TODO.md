@@ -18,7 +18,7 @@ POST /login
   1. tell them who they are logged in as
   
   START HERE!!!!
-  2. You forgot to build a logout -
+  2. You forgot to build a logout - Done
   3. create a protected page
 
 GET /pairs/new
@@ -36,4 +36,5 @@ GET /pairs/:id
   ACCEPT PAIR
 
 PATCH /pairs/:id 
+
 
