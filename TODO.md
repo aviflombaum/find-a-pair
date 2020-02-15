@@ -16,9 +16,11 @@ POST /login
   create their session and redirect
 
   1. tell them who they are logged in as
-  2. You forgot to build a logout
-  3. create a protected page
   
+  START HERE!!!!
+  2. You forgot to build a logout -
+  3. create a protected page
+
 GET /pairs/new
  show a form to make a request of a pair
  enter the topic 
