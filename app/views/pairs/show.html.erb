@@ -1,0 +1,10 @@
+<h1><%= @pair.topic %></h1>
+<h2>Requested by: <%= @pair.requestor_user.email %></h2>
+
+<% if @pair.accepted? %>
+  <h3>Accepted by: <%= @pair.respondor_user.email %></h3>
+<% else %>
+  <%= form_for(@pair) do |f| %>
+    <%= f.submit "Accept this Pair" %>
+  <% end %>
+<% end %>

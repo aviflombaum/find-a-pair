@@ -1,7 +1,8 @@
-<h1>All Pairs</h1>
+<h1>Open Pairs</h1>
 
 <ol>
 <% @pairs.each do |p| %>
-  <li><%= p.topic %></li>
+  <li><%= link_to "#{p.topic} from #{p.requestor_user.email}", pair_path(p) %></li>
 <% end %>
 </ol>
+

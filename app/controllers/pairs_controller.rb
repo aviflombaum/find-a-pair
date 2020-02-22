@@ -5,8 +5,21 @@ class PairsController < ApplicationController
   end
 
   def index
-    @pairs = Pair.all
+    @pairs = Pair.by_status(:open)
   end
+
+  def show
+    @pair = Pair.find(params[:id])   
+  end
+
+  def update
+    @pair = Pair.find(params[:id])
+    if @pair.accepted_by(current_user)
+      redirect_to @pair
+    else
+      render :show
+    end
+  end 
 
   def create
     @pair = Pair.new
@@ -22,7 +35,13 @@ class PairsController < ApplicationController
 
   private
     # Strong Params is required only when
-      # You are mass assigning data.
+      # You are mass assigning data from params
+      # User.new(params) # Stop you.
+      # params.require(:user).permit(:name, :email)
+
+      # @user.update({:name => "Avi", :email => "avi@flatironschool.com"})
+
+
       # User.new(params[:user]) # Won't Work
       # User.new(user_params) # Sanitized
 
