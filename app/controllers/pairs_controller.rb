@@ -9,7 +9,7 @@ class PairsController < ApplicationController
   end
 
   def show
-    @pair = Pair.find(params[:id])   
+    @pair = Pair.find(params[:id])  
   end
 
   def update
@@ -23,13 +23,14 @@ class PairsController < ApplicationController
 
   def create
     @pair = Pair.new
-    @pair.topic = params["Topic"]
+    @pair.title = params["title"]
+    @pair.description = params["description"]
     @pair.requestor_user_id = current_user.id 
 
     if @pair.save
       redirect_to "/pairs"
     else
-      raise @pair.errors.inspect
+      render :new
     end
   end
 

@@ -10,14 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_29_181458) do
+ActiveRecord::Schema.define(version: 2020_02_29_185750) do
 
   create_table "pairs", force: :cascade do |t|
-    t.string "topic"
+    t.string "title"
     t.integer "requestor_user_id"
     t.integer "respondor_user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "description"
   end
 
   create_table "users", force: :cascade do |t|

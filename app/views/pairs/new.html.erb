@@ -1,9 +1,26 @@
 <h1>Request a Pair</h1>
 
 <%= form_tag("/pairs") do %>
-  <%= label_tag "Topic" %>
-  <%= text_field_tag "Topic" %>
+  <p>
+    <%= label_tag "title", "Title" %>
+    <% if @pair && @pair.errors[:title] %>
+      <% @pair.errors.full_messages_for(:title).each do |message| %>
+        <p><%= message %></p>
+      <% end %>
+    <% end %>    
+    <%= text_field_tag "title" %>
+  </p>
 
+  <p>
+    <%= label_tag "description", "Description" %>
+    <% if @pair && @pair.errors[:description] %>
+      <% @pair.errors.full_messages_for(:description).each do |message| %>
+        <p><%= message %></p>
+      <% end %>
+    <% end %>    
+
+    <%= text_area_tag "description" %>
+  </p>
 
   <%= submit_tag %>
 <% end %>

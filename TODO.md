@@ -50,9 +50,20 @@ PATCH /pairs/:id
 
   Put something on homepage. Not surprise. - x
   
-  Some validation
-    1. Pairs requests need a title
+  We've added Titles to Pairs
+  And we've added description
+  1. update the forms with the new fields
+  2. update the controller create action to work.
+  3. add validation of length to title
+  4. update the form to show the errors.
+
+
+-- SPRINT 5 - START HERE
+  REVIST 
+    Some validation
     2. You can't accept a pair with yourself.
+
+  --
 
   Show me my pair requests
   Show me who accepted my pair request
@@ -60,11 +71,18 @@ PATCH /pairs/:id
   How do we help facilitate the people actually pairing?
     - Scheduling a time
     - Posting times that the requestor is open for pairing
+    - Estimate of how long you want to pair for?
+    - Difficulty
+    - Immediacy
 
   Admin/See All Pairs, Open, Closed
 
 What about a frontend?
 https://html5up.net/
+
+strong_params
+form_for(@user)
+form_for(@pair)
 
 Perhaps use Devise/Omniauth/Auth.net later.
 
