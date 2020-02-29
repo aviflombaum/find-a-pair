@@ -45,6 +45,8 @@ PATCH /pairs/:id
 
   Navigational Links - X
   Authentication / Passwords
+    - passwords implemented but no password confirmation on registration
+
 
   Put something on homepage. Not surprise.
 
@@ -61,6 +63,8 @@ PATCH /pairs/:id
 
 What about a frontend?
 https://html5up.net/
+
+Perhaps use Devise/Omniauth/Auth.net later.
 
 -- Sprint 5 -
   Notify people that their pair was accepted
