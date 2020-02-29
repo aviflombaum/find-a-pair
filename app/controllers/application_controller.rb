@@ -4,9 +4,7 @@ class ApplicationController < ActionController::Base
   
   before_action :current_user
   
-  # Action / End point to HTTP Request
   def home
-    @magic = "Suprise!!"
   end
 
   private

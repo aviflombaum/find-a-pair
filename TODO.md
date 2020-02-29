@@ -48,7 +48,11 @@ PATCH /pairs/:id
     - passwords implemented but no password confirmation on registration
 
 
-  Put something on homepage. Not surprise.
+  Put something on homepage. Not surprise. - x
+  
+  Some validation
+    1. Pairs requests need a title
+    2. You can't accept a pair with yourself.
 
   Show me my pair requests
   Show me who accepted my pair request
@@ -56,8 +60,6 @@ PATCH /pairs/:id
   How do we help facilitate the people actually pairing?
     - Scheduling a time
     - Posting times that the requestor is open for pairing
-  
-  Some validation
 
   Admin/See All Pairs, Open, Closed
 
@@ -65,6 +67,12 @@ What about a frontend?
 https://html5up.net/
 
 Perhaps use Devise/Omniauth/Auth.net later.
+
+Ideas for Logged in Homepage
+  - Recently added requests
+  - Tagging requests
+  Show me my pair requests
+  Show me who accepted my pair request  
 
 -- Sprint 5 -
   Notify people that their pair was accepted
