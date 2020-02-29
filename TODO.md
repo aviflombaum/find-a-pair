@@ -27,15 +27,70 @@ GET /pairs/new
 POST /pairs
   take the pair request data and save it to the DB
 
---  YOU ARE HERE
-
-GET /pairs 
-  show a list of all open pairs
+--  Sprint 3 - Completing 
 
 GET /pairs/:id
   Show details of the pair request
   ACCEPT PAIR
 
+
+GET /pairs 
+  show a list of all open pairs
+  - how do know if a pair is open?
+  - how do we only show open pairs in the view
+
 PATCH /pairs/:id 
+
+-- Sprint 4 - NEXT SPRINT
+
+  Navigational Links - X
+  Authentication / Passwords
+
+  Put something on homepage. Not surprise.
+
+  Show me my pair requests
+  Show me who accepted my pair request
+
+  How do we help facilitate the people actually pairing?
+    - Scheduling a time
+    - Posting times that the requestor is open for pairing
+  
+  Some validation
+
+  Admin/See All Pairs, Open, Closed
+
+What about a frontend?
+https://html5up.net/
+
+-- Sprint 5 -
+  Notify people that their pair was accepted
+
+  Unpair themselves
+
+-- Theme
+
+
+----
+Requestor should have to "accept" the respondor => status to pair
+Profile - skill level, some stuff, github, linked, twitter
+
+generate zoom meetings or something else...
+
+twilio txt'ing reminders...
+
+pairs details
+  language
+  skill 
+  requested time
+  concept / project
+  lab / module
+  github for code / repl.it
+sort by
+
+### Big refactor
+many pair_responses but maybe limit
+
+
+
 
 
