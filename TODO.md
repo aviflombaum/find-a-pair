@@ -65,6 +65,13 @@ PATCH /pairs/:id
 
   --
 
+What about a frontend?
+https://html5up.net/
+
+strong_params
+form_for(@user)
+form_for(@pair)
+
   Show me my pair requests
   Show me who accepted my pair request
 
@@ -77,12 +84,7 @@ PATCH /pairs/:id
 
   Admin/See All Pairs, Open, Closed
 
-What about a frontend?
-https://html5up.net/
 
-strong_params
-form_for(@user)
-form_for(@pair)
 
 Perhaps use Devise/Omniauth/Auth.net later.
 

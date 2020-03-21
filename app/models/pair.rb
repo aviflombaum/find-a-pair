@@ -4,6 +4,7 @@ class Pair < ApplicationRecord
   belongs_to :respondor_user, :class_name => "User", :optional => true
   validates :title, :length => {in: 10..100}
   validates :description, :presence => true
+  validate  :different_respondor # still into the name
 
   def self.by_status(status)
     case status
@@ -14,14 +15,14 @@ class Pair < ApplicationRecord
     end    
   end
 
+  def different_respondor
+    if self.respondor_user == self.requestor_user
+      self.errors.add(:respondor_user)
+    end
+  end
 
   def accepted_by(user)
-    if user == self.requestor_user
-      self.errors.add(:respondor_user, "Blah")
-      return false
-    else
-      self.update(:respondor_user => user)
-    end
+    self.update(:respondor_user => user)
   end
 
   def accepted?
