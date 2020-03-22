@@ -28,6 +28,15 @@
           </li>
           <li class="nav-item">
             <%= link_to_unless_current "New Pair", new_pair_path, class: "nav-link" %> 
+          </li>          
+          <li class="nav-item">
+            <%= link_to_unless_current "Register", register_path, class: "nav-link" %> 
+          </li>
+          <li class="nav-item">
+            <%= link_to_unless_current "Login", login_path, class: "nav-link" %> 
+          </li>          
+          <li class="nav-item">
+            <%= link_to_unless_current "Logout", logout_path, class: "nav-link" %> 
           </li>
         </ul>
 

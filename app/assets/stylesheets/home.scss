@@ -1,8 +1,10 @@
 main[page='home']{
   .newest{
-    @extend .container;    
-    .col-md{
+    @extend .container;   
+
+    .card{
+      @extend .col-sm;
       @extend .mx-2;
-    }
+    } 
   }
 }
