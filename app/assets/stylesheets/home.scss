@@ -1,0 +1,8 @@
+main[page='home']{
+  .newest{
+    @extend .container;    
+    .col-md{
+      @extend .mx-2;
+    }
+  }
+}
